@@ -6,7 +6,7 @@ import logo from "/public/logo-white.svg";
 import Image from "next/image";
 const Page = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 place-items-center place-content-center mt-10">
+    <div className="flex flex-row justify-center items-center mt-10">
       <div className="flex flex-col">
         <div>
           <Image src={logo} alt="" width={150} />

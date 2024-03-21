@@ -17,14 +17,14 @@ const Nav = () => {
           </div>
         </Link>
         <div className="flex flex-row mx-8 text-sm gap-5">
-            <div></div>
+          <div></div>
           <p className="text-red-700 text-center font-semibold">Incubator</p>
           <p className="text-red-700 text-center font-semibold">Series A</p>
         </div>
       </div>
       <div className="flex items-center justify-center space-x-4 relative">
         {/* Wrap the Image and span in a div */}
-        <Link href="/financial-statistics" passHref>
+        <Link href="/" passHref>
           <div className="cursor-pointer group">
             <Image
               src={financialStatistics}
@@ -38,7 +38,7 @@ const Nav = () => {
             </span>
           </div>
         </Link>
-        <Link href="/digital-statistics" passHref>
+        <Link href="/statistics/digital-statistics" passHref>
           <div className="cursor-pointer group">
             <Image
               src={digitalStatistics}
@@ -52,7 +52,7 @@ const Nav = () => {
             </span>
           </div>
         </Link>
-        <Link href="/other-statistics" passHref>
+        <Link href="/statistics/other-statistics" passHref>
           <div className="cursor-pointer group mt-1">
             <Image
               src={othersStatistics}
