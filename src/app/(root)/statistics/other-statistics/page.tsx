@@ -6,6 +6,7 @@ import {MentorBooking} from "@/app/components/community/mentor-booking"; // Ensu
 import PartnerCarousel from "@/app/components/community/partner-carousel";
 import PartnerLogos from "@/app/components/community/partner-carousel";
 import ContactPartnersForm from "@/app/components/community/partner-form";
+import Jobs from "@/app/components/community/jobs";
 
 const CommunityPage = () => {
   // Placeholder data for WorkspaceBooking and MentorBooking components
@@ -72,6 +73,11 @@ const CommunityPage = () => {
       <section className="mt-10">
         <h2 className="text-4xl font-semibold mb-6">Book a Mentor Session</h2>
         <MentorBooking mentors={mentors} />
+      </section>
+
+      <section className="mt-10">
+        <h2 className="text-4xl font-semibold mb-6">Jobs</h2>
+        <Jobs />
       </section>
 
       <section className="mt-10">
