@@ -1,24 +1,28 @@
 "use client";
 import AsanaTasksComponent from "@/app/components/digital/asana";
+import HubSpotLeadsComponent from "@/app/components/digital/hubspot";
+import SlackNotificationsComponent from "@/app/components/digital/slack";
 import UnreadNotificationsSlack from "@/app/components/digital/slack";
 import React, {useState} from "react";
-
 const DigitalStatistics = () => {
   return (
     <div className="bg-gray-50 min-h-screen p-8">
-      <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl font-bold text-gray-800 mb-10">Digital Statistics Dashboard</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="max-w-7xl mx-auto">
+        <h1 className="text-4xl font-bold text-center mb-12">Digital Statistics Dashboard</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Asana Tasks Component */}
-          <AsanaTasksComponent />
-
+          <div>
+            <AsanaTasksComponent />
+          </div>
           {/* Slack Notifications Component */}
-          <UnreadNotificationsSlack />
-          
-          {/* Placeholder for other components */}
-          {/* <OtherComponent /> */}
-          
-          {/* More components can be added here following the same pattern */}
+          <div>
+            <SlackNotificationsComponent />
+          </div>
+          {/* HubSpot Leads and Queries Component */}
+          <div>
+            <HubSpotLeadsComponent />
+          </div>
+          {/* Additional components can be added here */}
         </div>
       </div>
     </div>
@@ -26,7 +30,6 @@ const DigitalStatistics = () => {
 };
 
 export default DigitalStatistics;
-
 // const [searchTerm, setSearchTerm] = useState('');
 // const [platform, setPlatform] = useState('');
 // const [dataType, setDataType] = useState('');

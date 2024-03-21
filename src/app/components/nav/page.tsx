@@ -69,7 +69,7 @@ const Nav = () => {
               className="group-hover:hidden"
             />
             <span className="hidden group-hover:block text-black w-[85px] font-semibold text-center">
-              Other
+              Community
             </span>
           </div>
         </Link>
