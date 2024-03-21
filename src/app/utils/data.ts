@@ -286,31 +286,31 @@ export const Equity_Data = {
     },
   ],
 };
-const Funds_Data = {
+export const Funds_Data = {
   labels: ["At disposal", "Upcoming"],
   datasets: [
     {
-      label: "Funds Raised",
-      data: [1000000, 4000000],
+      label: "Funds Raised (in thousands)",
+      data: [100, 400],
       backgroundColor: ["rgba(255, 99, 132, 0.2)", "rgba(54, 162, 235, 0.2)"],
       borderColor: ["rgba(255, 99, 132, 1)", "rgba(54, 162, 235, 1)"],
       borderWidth: 1,
     },
   ],
 };
-const Expenses_Data = {
+export const Expenses_Data = {
   labels: ["Marketing", "Operations", "Personnel", "IT & Software"],
   datasets: [
     {
       label: "Expenses",
-      data: [50000, 75000, 100000, 125000],
+      data: [50000, 35000, 50000, 125000],
       borderColor: "rgba(255, 99, 132, 1)",
       backgroundColor: "rgba(255, 99, 132, 0.2)",
       fill: true,
     },
   ],
 };
-const Budget_Data = {
+export const Budget_Data = {
   labels: ["Marketing", "Operations", "Personnel", "IT & Software"],
   datasets: [
     {

@@ -4,7 +4,14 @@ import LineChart from "../components/graphs/line-graph";
 import DoughnutChart from "../components/graphs/doughnut-graph";
 import Image from "next/image";
 import InvestmentMeeting from "../components/investment-meeting";
-import {Burn_Rate_Data, Profitability_Data, Revenue_Data} from "../utils/data";
+import {
+  Burn_Rate_Data,
+  Funds_Data,
+  Profitability_Data,
+  Revenue_Data,
+} from "../utils/data";
+import BarChart from "../components/graphs/bar-graph";
+import ComparisonDiagram from "../components/graphs/block-graph";
 
 const Home = () => {
   const data = {
@@ -95,7 +102,7 @@ const Home = () => {
     <section className="my-10 mx-14">
       <div className="flex w-full">
         <h1 className="text-center text-black text-5xl font-bold mb-5">
-          STARTUP NAME
+          STARTWithUs
         </h1>
       </div>
       <div className="flex flex-col gap-8">
@@ -124,6 +131,15 @@ const Home = () => {
             {"Equity Holding"}
             {/* Adjust the size as needed */}
             <DoughnutChart data={doughnutData} options={doughnutOptions} />
+          </div>
+        </div>
+        <div className="flex w-full flex-row gap-8">
+          <div className="w-[475px] h-[330px] bg-white rounded-xl py-2 px-3">
+            <BarChart data={Funds_Data} options={barOptions} />
+          </div>
+          <div className="flex flex-col bg-white w-[655px] p-4 rounded-xl">
+            <h1 className="text-xl mb-3 px-10">Expenses</h1>
+            <ComparisonDiagram />
           </div>
         </div>
       </div>
