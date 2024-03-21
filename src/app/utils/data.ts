@@ -322,3 +322,33 @@ export const Budget_Data = {
     },
   ],
 };
+
+export const events = [
+  {
+    id: 1,
+    title: "Tech Innovators Conference",
+    date: "April 15, 2024",
+    description:
+      "Join us for a day of talks, workshops, and networking with the pioneers of the tech industry.",
+    imageUrl:
+      "https://vir.com.vn/stores/news_dataimages/2023/072023/19/15/12b8adade07000b04846c4d60ffd0276.png?rt=20230719152853",
+  },
+  {
+    id: 2,
+    title: "Green Tech Symposium",
+    date: "May 20, 2024",
+    description:
+      "Explore the latest in sustainable technologies and how they're shaping our future.",
+    imageUrl:
+      "https://startupnowforum.gr/wp-content/uploads/2021/09/I-will-be-at-GREENTECH-1200x630-1.jpg",
+  },
+  {
+    id: 3,
+    title: "AI in Healthcare Summit",
+    date: "June 11, 2024",
+    description:
+      "Discover the revolutionary impact of AI on healthcare at this must-attend summit.",
+    imageUrl:
+      "https://miro.medium.com/v2/resize:fit:1200/1*3SbtyZwucRgy9F5tO7qSVQ.png",
+  },
+];
