@@ -5,8 +5,8 @@ import tickCross from "/public/tick-cross.png";
 const meetingData = [
   {name: "Venture Capitalist 1", date: "27 March, 2024", time: "14:00 - 14:45"},
   {name: "Angel Investor 1", date: "12 April, 2024", time: "12:30 - 13:00"},
-  {name: "Investor 2", date: "15 April, 2024", time: "11:00 - 11:3"},
-  {name: "Venture Capitalist 2", date: "15 April, 2024", time: "11:00 - 11:3"},
+  {name: "Investor 2", date: "15 April, 2024", time: "11:00 - 11:30"},
+  {name: "Venture Capitalist 2", date: "21 April, 2024", time: "09:00 - 10:00"},
 ];
 
 const MeetingCard = ({

@@ -17,9 +17,16 @@ const Nav = () => {
           </div>
         </Link>
         <div className="flex flex-row mx-8 text-sm gap-5">
-          <div></div>
-          <p className="text-red-700 text-center font-semibold">Incubator</p>
-          <p className="text-red-700 text-center font-semibold">Series A</p>
+          <div className="flex flex-col justify-items-center">
+            <p className="text-black text-center font-semibold">PROGRAM:</p>
+            <p className="text-red-700 text-center font-semibold">
+              ACCELERATOR
+            </p>
+          </div>
+          <div className="flex flex-col justify-items-center">
+            <p className="text-black text-center font-semibold">STAGE:</p>
+            <p className="text-red-700 text-center font-semibold">SERIES A</p>
+          </div>
         </div>
       </div>
       <div className="flex items-center justify-center space-x-4 relative">

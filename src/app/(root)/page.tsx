@@ -40,8 +40,8 @@ const Home = () => {
     labels: ["Founders", "Venture Capitalist", "Angel Investor"],
     datasets: [
       {
-        label: "My First Dataset",
-        data: [300, 50, 100],
+        label: "in %",
+        data: [80, 8, 12],
         backgroundColor: [
           "rgba(255, 99, 132, 1)",
           "rgba(54, 162, 235, 1)",
@@ -102,7 +102,7 @@ const Home = () => {
     <section className="my-10 mx-14">
       <div className="flex w-full">
         <h1 className="text-center text-black text-5xl font-bold mb-5">
-          STARTWithUs
+          four20 GmbH
         </h1>
       </div>
       <div className="flex flex-col gap-8">
