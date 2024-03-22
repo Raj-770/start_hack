@@ -19,7 +19,7 @@ const ComparisonDiagram = () => {
               comparisonResult[index] === "green" ? "#d4edda" : "#f8d7da",
           }}
         >
-          <p className="font-bold">{label}</p>
+          <p className="">{label}</p>
         </div>
       ))}
     </div>

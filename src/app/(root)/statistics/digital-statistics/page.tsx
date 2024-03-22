@@ -8,7 +8,7 @@ import UnreadNotificationsSlack from "@/app/components/digital/slack";
 import React, {useState} from "react";
 const DigitalStatistics = () => {
   return (
-    <div className="bg-gray-50 min-h-screen p-8">
+    <div className="bg-[#F0F0F0] min-h-screen p-8">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-5xl font-bold ml-[140px] mb-12">
           Digital Statistics Dashboard
@@ -43,7 +43,9 @@ const DigitalStatistics = () => {
           </div>
         </div>
         <div className="mt-12">
-          <h2 className="text-3xl font-semibold text-center mb-8">Automated Workflows</h2>
+          <h2 className="text-3xl font-semibold text-center mb-8">
+            Automated Workflows
+          </h2>
           <AutomatedWorkflowsComponent />
         </div>
       </div>

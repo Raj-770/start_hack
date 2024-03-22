@@ -127,8 +127,8 @@ const Home = () => {
             </div>
             <InvestmentMeeting />
           </div>
-          <div className="w-[655px] h-[580px] bg-white rounded-xl pt-6 pb-10 px-10 text-xl">
-            {"Equity Holding"}
+          <div className="w-[655px] h-[580px] bg-white rounded-xl pt-6 pb-[150px] px-10 text-xl">
+            <p className="mb-10 text-center font-semibold">Equity Holding</p>
             {/* Adjust the size as needed */}
             <DoughnutChart data={doughnutData} options={doughnutOptions} />
           </div>
@@ -138,7 +138,9 @@ const Home = () => {
             <BarChart data={Funds_Data} options={barOptions} />
           </div>
           <div className="flex flex-col bg-white w-[655px] p-4 rounded-xl">
-            <h1 className="text-xl mb-3 px-10">Expenses</h1>
+            <h1 className="text-xl mb-3 px-10 text-center font-semibold">
+              Expenses
+            </h1>
             <ComparisonDiagram />
           </div>
         </div>
