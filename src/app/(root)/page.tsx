@@ -134,7 +134,7 @@ const Home = () => {
           </div>
         </div>
         <div className="flex w-full flex-row gap-8">
-          <div className="w-[475px] h-[330px] bg-white rounded-xl py-2 px-3">
+          <div className="w-[475px] h-[330px] bg-white rounded-xl py-10 px-1">
             <BarChart data={Funds_Data} options={barOptions} />
           </div>
           <div className="flex flex-col bg-white w-[655px] p-4 rounded-xl">

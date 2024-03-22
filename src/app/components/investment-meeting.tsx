@@ -19,10 +19,10 @@ const MeetingCard = ({
   time: string;
 }) => {
   return (
-    <div className="flex flex-row justify-between items-center w-[400px] h-[50px] p-4 shadow-md">
+    <div className="flex flex-row justify-between items-center w-[350px] h-[50px] p-4 shadow-md border rounded-lg border-slate-300">
       <div className="flex flex-col justify-center items-center">
-        <p className="text-black text-center text-xl">{name}</p>
-        <p className="text-slate-700 text-center text-m">
+        <p className="text-black text-center text-lg">{name}</p>
+        <p className="text-slate-700 text-center text-md">
           {date} {time}
         </p>
       </div>
@@ -33,8 +33,8 @@ const MeetingCard = ({
 
 const InvestmentMeeting = () => {
   return (
-    <div className="flex flex-col bg-white p-8 gap-4 rounded-xl h-[400px]">
-      <p className="text-xl mb-4">Investment Meetings</p>
+    <div className="flex flex-col justify-center items-center bg-white p-8 gap-4 rounded-xl h-[400px]">
+      <p className="text-xl text-center font-bold mb-4">Investment Meetings</p>
       {meetingData.map((data, index) => (
         <MeetingCard
           key={index}
