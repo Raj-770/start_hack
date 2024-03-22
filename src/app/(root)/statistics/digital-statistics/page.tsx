@@ -1,6 +1,8 @@
 "use client";
 import AsanaTasksComponent from "@/app/components/digital/asana";
+import AutomatedWorkflowsComponent from "@/app/components/digital/automated-workflow";
 import HubSpotLeadsComponent from "@/app/components/digital/hubspot";
+import RecentActivityComponent from "@/app/components/digital/recent-activity";
 import SlackNotificationsComponent from "@/app/components/digital/slack";
 import UnreadNotificationsSlack from "@/app/components/digital/slack";
 import React, {useState} from "react";
@@ -8,21 +10,41 @@ const DigitalStatistics = () => {
   return (
     <div className="bg-gray-50 min-h-screen p-8">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-12">Digital Statistics Dashboard</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Asana Tasks Component */}
-          <div>
-            <AsanaTasksComponent />
+        <h1 className="text-5xl font-bold ml-[140px] mb-12">
+          Digital Statistics Dashboard
+        </h1>
+
+        {/* Recent Activities Section */}
+        <div className="mb-8">
+          <RecentActivityComponent />
+        </div>
+
+        {/* Applications Overview Section */}
+        <h2 className="text-3xl font-semibold text-center mb-8 mt-10">
+          Applications Overview
+        </h2>
+        <div className="flex flex-row gap-12 justify-center">
+          {/* First Column: Asana and Slack */}
+          <div className="flex flex-col gap-2">
+            <div>
+              <AsanaTasksComponent />
+            </div>
+            <div>
+              <SlackNotificationsComponent />
+            </div>
           </div>
-          {/* Slack Notifications Component */}
-          <div>
-            <SlackNotificationsComponent />
+
+          {/* Second Column: HubSpot */}
+          <div className="flex flex-col space-y-8">
+            <div>
+              <HubSpotLeadsComponent />
+            </div>
+            {/* Placeholder for additional single components in the future */}
           </div>
-          {/* HubSpot Leads and Queries Component */}
-          <div>
-            <HubSpotLeadsComponent />
-          </div>
-          {/* Additional components can be added here */}
+        </div>
+        <div className="mt-12">
+          <h2 className="text-3xl font-semibold text-center mb-8">Automated Workflows</h2>
+          <AutomatedWorkflowsComponent />
         </div>
       </div>
     </div>
@@ -30,6 +52,7 @@ const DigitalStatistics = () => {
 };
 
 export default DigitalStatistics;
+
 // const [searchTerm, setSearchTerm] = useState('');
 // const [platform, setPlatform] = useState('');
 // const [dataType, setDataType] = useState('');

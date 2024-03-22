@@ -4,7 +4,7 @@ const AsanaTasksComponent = () => {
   const activeTasks = 42; // Fixed constant number of active tasks
 
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white m-4">
+    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white ml-4">
       <div className="px-6 py-4 bg-orange-100 border-b border-orange-200">
         <h2 className="font-bold text-xl mb-2 text-center text-orange-800">
           Asana Tasks
